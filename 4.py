@@ -10,6 +10,6 @@ a=int(input())
 max_dig=0
 while a>0:
     max_dig=max(max_dig,a%10)
-    a=int(a/10)
+    a=a//10
     
 print('Максимальная цифра: {0}'.format(max_dig))
