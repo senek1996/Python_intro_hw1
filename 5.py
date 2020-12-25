@@ -14,4 +14,6 @@ if prib<0:
     print('\nУбыток фирмы: {0} руб. ДЕЙСТВУЙТЕ!'.format(abs(prib)))
 else:
     rent=prib/prof
-    print('\nПрибыль фирмы: {0} руб.\nРентабельность фирмы: {1}'.format(prib,rent))
+    print('\nПрибыль фирмы: {0} руб.\nРентабельность фирмы: {1:.3f}'.format(prib,rent))
+    empls=int(input('Сколько сотрудников работает в компании?'))
+    print('\nЗначение прибыли на одного сотрудника: {0:.2f} руб.'.format(abs(prib/empls)))
